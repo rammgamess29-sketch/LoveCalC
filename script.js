@@ -1,5 +1,5 @@
 // Configuration
-const GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_SHEETS_WEB_APP_URL'; // Replace with your actual URL
+const GOOGLE_SHEETS_URL = ' https://script.google.com/macros/s/AKfycbyEs5ygL1mnPSzCmsc_emwHQV-Vg_qL7c9CjFbifymaH_kbA3CwDKLB1SYQVZ9mFPSUXg/exec '; // Replace with your actual URL
 
 // DOM Elements
 let firstName, secondName, calculateBtn, loadingSection, resultSection;
