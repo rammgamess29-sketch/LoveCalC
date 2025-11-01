@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Love Calculator - Find your love compatibility">
+    <title>💕 Love Calculator - Find Your Perfect Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-overlay"></div>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+        <div class="heart-float">💜</div>
+        <div class="heart-float">💖</div>
+        <div class="heart-float">💕</div>
+        <div class="heart-float">💗</div>
+        <div class="heart-float">💓</div>
+        <div class="heart-float">💞</div>
+        <div class="heart-float">💝</div>
+        <div class="heart-float">✨</div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Card -->
+        <div class="love-card">
+            <!-- Sparkles -->
+            <div class="sparkle sparkle1"></div>
+            <div class="sparkle sparkle2"></div>
+            <div class="sparkle sparkle3"></div>
+            
+            <!-- Header -->
+            <div class="card-header">
+                <div class="logo-container">
+                    <div class="heart-logo">
+                        <span>💜</span>
+                    </div>
+                </div>
+                <h1 class="app-title">Love Calculator</h1>
+                <p class="app-subtitle">Discover Your Love Compatibility Score</p>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-group">
+                    <label class="input-label">First Person</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            class="love-input" 
+                            placeholder="Enter first name"
+                            maxlength="30"
+                            autocomplete="off"
+                        >
+                        <span class="input-icon">💜</span>
+                    </div>
+                </div>
+
+                <div class="heart-divider">
+                    <span class="divider-heart">💕</span>
+                    <div class="divider-line"></div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">Second Person</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="secondName" 
+                            class="love-input" 
+                            placeholder="Enter second name"
+                            maxlength="30"
+                            autocomplete="off"
+                        >
+                        <span class="input-icon">💜</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button class="calculate-button" id="calculateBtn" onclick="startCalculation()">
+                <span class="button-text">Calculate Love</span>
+                <span class="button-icon">💘</span>
+            </button>
+
+            <!-- Loading Animation -->
+            <div class="loading-section" id="loadingSection">
+                <div class="loading-hearts">
+                    <span class="loading-heart">💜</span>
+                    <span class="loading-heart">💖</span>
+                    <span class="loading-heart">💜</span>
+                </div>
+                <p class="loading-text">Analyzing your hearts...</p>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-section" id="resultSection">
+                <div class="result-content">
+                    <!-- Percentage Display -->
+                    <div class="percentage-container">
+                        <div class="percentage-circle">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="90" class="circle-bg"></circle>
+                                <circle cx="100" cy="100" r="90" class="circle-progress" id="progressCircle"></circle>
+                            </svg>
+                            <div class="percentage-value">
+                                <span id="percentageNumber">0</span>%
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Names Display -->
+                    <div class="couple-display">
+                        <span id="displayName1" class="name-display"></span>
+                        <span class="heart-connector">💕</span>
+                        <span id="displayName2" class="name-display"></span>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="result-message" id="loveMessage"></div>
+
+                    <!-- Emoji Reaction -->
+                    <div class="emoji-reaction" id="emojiReaction"></div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="action-btn try-again-btn" onclick="tryAgain()">
+                            <span>Try Again</span>
+                        </button>
+                        <button class="action-btn share-btn" onclick="shareResults()">
+                            <span>Share</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="footer-heart">💜</span> for lovers</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
